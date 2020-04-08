@@ -8,6 +8,8 @@ import json
 
 
 class ParseRussiaData:
+    """Parse russian statistic of coronavirus"""
+
     def __init__(self):
         self.url = 'https://стопкоронавирус.рф/'
         date = datetime.datetime.now()
@@ -57,6 +59,8 @@ class ParseRussiaData:
 
 
 class ParseCoronavitrusNews:
+    """Parse news coronavirus in Russia"""
+
     def __init__(self):
         self.url = 'https://стопкоронавирус.рф/news/'
         self.articles_links = []
@@ -154,6 +158,8 @@ class ParseCoronavitrusNews:
 
 
 class ParseWorldData:
+    """Parse world statistic of coronavirus"""
+
     def __init__(self):
         self.url = 'https://meduza.io/feature/2020/03/05/' \
                    'poslednie-dannye-po-koronavirusu-vo-vsem-mire-tablitsa'

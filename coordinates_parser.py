@@ -5,6 +5,8 @@ import json
 
 
 class ParseRussiaTowns:
+    """Parse coordinates of russians towns and regions"""
+
     def __init__(self):
         self.url = 'https://time-in.ru/coordinates/russia'
         self.towns = {}
@@ -62,6 +64,7 @@ class ParseRussiaTowns:
 
 
 class ParseWorldTowns:
+    """Parse coordinates of world towns and countries"""
     def __init__(self):
         self.url = 'https://time-in.ru/coordinates'
         self.countries_links = {}

@@ -9,6 +9,7 @@ Session = sessionmaker(bind=engine)
 
 
 class CoronavirusRussiaStatistic(Base):
+    """Create table russia"""
     __tablename__ = 'russia'
     id = Column(Integer, primary_key=True)
     town = Column(String)
@@ -20,6 +21,7 @@ class CoronavirusRussiaStatistic(Base):
 
 
 class News(Base):
+    """Create table news"""
     __tablename__ = 'news'
     id = Column(Integer, primary_key=True)
     title = Column(String, unique=True)
@@ -29,6 +31,7 @@ class News(Base):
 
 
 class CoronavirusWorldStatistic(Base):
+    """Create table word"""
     __tablename__ = 'world'
     id = Column(Integer, primary_key=True)
     country = Column(String)
